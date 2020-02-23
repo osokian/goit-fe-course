@@ -4,68 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="container">
-        <nav class="main-nav">
-            <a class="logo" href="https://google.com/" target="_blank">Mart</a>
-            <ul class="main-list">
-                <li class="main-list-item">home</li>
-                <li class="main-list-item">about us</li>
-                <li class="main-list-item">page</li>
-                <li class="main-list-item">shop</li>
-                <li class="main-list-item">blog</li>
-                <li class="main-list-item">contact us</li>
+    <header class="page-header clearfix">
+        <nav>
+            <a class="logo" href="#" target="_blank">MART</a>
+            <ul class="menu clearfix">
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">home</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">about us</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">page</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">shop</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">blog</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">contact us</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Featured products</h2>
-                <ul>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product1.jpg" alt="" width="255" height="282">
+        <section class="featured-1">
+            <h2 class="features-heading">Featured products</h2>
+                <ul class="features-item">
+                    <li class="features-list">
+                        <img src="./img/Products/Product1.jpg" alt="shoes" title="shoes">
+                        <p class="features-price-name">BLUE TSHIRT</p>
+                        <p class="features-price">$26</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product2.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product2.jpg" alt="belt" title="belt">
+                        <p class="features-price-name">WOMAN SHIRT</p>
+                        <p class="features-price">$31</p>
+                        
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product3./img/Products/Product1.jpg.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product3.jpg" alt="hat" title="hat">
+                        <p class="features-price-name">YELLOW SHIRT</p>
+                        <p class="features-price">$21</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product4.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product4.jpg" alt="handbag" title="handbag">
+                        <p class="features-price-name">COOL LINGERIE</p>
+                        <p class="features-price">$56</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product5.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product5.jpg" alt="shoes" title="shoes">
+                        <p class="features-price-name">BLUE TSHIRT</p>
+                        <p class="features-price">$26</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product6.jpgg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product6.jpg" alt="belt" title="belt">
+                        <p class="features-price-name">WOMAN SHIRT</p>
+                        <p class="features-price">$31</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product7.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product7.jpg" alt="hat" title="hat">
+                        <p class="features-price-name">YELLOW SHIRT</p>
+                        <p class="features-price">$21</p>
                     </li>
-                    <li>
-                        <img class="features-image" src="./img/Products/Product8.jpg" alt="" width="255" height="282">
+                    <li class="features-list">
+                        <img src="./img/Products/Product8.jpg" alt="handbag" title="handbag">
+                        <p class="features-price-name">COOL LINGERIE</p>
+                        <p class="features-price">$56</p>
                     </li>
                 </ul>
         </section>
-        <section>
-            <h2>Later news</h2>
-            <ul>
-                <li>
-                    <img class="features-image" src="./img/ipad.jpg" alt="Lorem ipsum" width="350" height="266">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+        <section class="featured-2 clearfix">
+            <h2 class="news-heading">Later news</h2>
+            <ul class="news-item clearfix">
+                <li class="news-list">
+                    <img src="./img/Ipod/ipad.png" alt="ipad" title="ipad">
+                    <p class="news-name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+                    <p class="news-discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia necessitatibus
+                         incidunt iste ad maiores libero! Reiciendis, odio iusto. Maxime.</p>
+                    <button class="button">read more</button>
                 </li>
-                <li>
-                    <img class="features-image" src="./img/slide1.jpg" alt="Lorem ipsum" width="350" height="266">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+                <li class="news-list">
+                    <img src="./img/Ipod/slide1.png" alt="slide1" title="slide1">
+                    <p class="news-name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+                    <p class="news-discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia necessitatibus
+                         incidunt iste ad maiores libero! Reiciendis, odio iusto. Maxime.</p>
+                    <button class="button">read more</button>
                 </li>
-                <li>
-                    <img class="features-image" src="./img/product-img-5.jpg" alt="Lorem ipsum" width="350" height="266">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+                <li class="news-list">
+                    <img src="./img/Ipod/product-img-5.png" alt="img-5" title="img-5">
+                    <p class="news-name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, ipsam.</p>
+                    <p class="news-discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia necessitatibus
+                         incidunt iste ad maiores libero! Reiciendis, odio iusto. Maxime.</p>
+                    <button class="button">read more</button>
                 </li>
             </ul>
         </section>
