@@ -1,12 +1,16 @@
-html {
-    box-sizing: border-box;
-}
+
 *,
 *::before
 *::after {
     box-sizing: inherit;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    box-sizing: border-box;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -17,13 +21,14 @@ img {
     margin: 0 auto;
 }
 .navigation {
+    width: 1200px;
     display: flex;
     min-height: 100px;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
-    font-family: 'Montseerrar', sans-serif;
+    font-family: 'Montserrar', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -80,7 +85,7 @@ img {
     margin-bottom: 16px;
 }
 .section-title {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     tab-size: 30px;
     line-height: 36px;
@@ -139,7 +144,7 @@ img {
 }
 .services-item-title {
     text-transform: uppercase;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
@@ -149,7 +154,7 @@ img {
     color: #333333;
 }
 .services-item-discription, .our-team-about {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
@@ -180,7 +185,7 @@ img {
 }
 .name {
     text-transform: uppercase;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -188,7 +193,7 @@ img {
     margin-bottom: 6px;
 }
 .position {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 15px;
@@ -216,7 +221,7 @@ img {
     width: 56px;
     height: 56px;
     list-style: none;
-    background-image: url(../img/social_icons/facebook.png);
+    background-image: url(../img/social-icons/facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #fce38a;
@@ -235,13 +240,13 @@ img {
     overflow: hidden;
 }
 .twitter {
-    background-image: url(../img/social_icons/twitter.png);
+    background-image: url(../img/social-icons/twitter.png);
 }
 .pinterest {
-    background-image: url(../img/social_icons/pinterest.png);
+    background-image: url(../img/social-icons/pinterest.png);
 }
 .instagram {
-    background-image: url(../img/social_icons/instagram.png);
+    background-image: url(../img/social-icons/facebook.png);
 }
 .overlay-icon:not:not(:last-child) {
     margin-right: 1px;
@@ -282,14 +287,14 @@ img {
 .left p {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: 14px;
     color: #333333;
 }
 .left a {
     color: #f38181;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding-left: 5px;
@@ -306,9 +311,9 @@ footer {
     display: flex;
 }
 .right input {
-    height: 40px;
+    height: 36px;
     width: 230px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 15px;
@@ -318,21 +323,19 @@ footer {
     text-align: left;
     padding-left: 12px;
 }
-.right button {
-    padding-left: 32px;
-    padding-right: 3px;
+.push {
+    width: 150px;
+    height: 40px;
     text-transform: uppercase;
     color: white;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 24px;
     font-weight: 600;
     background-color: rgb(149,225,211);
-    border: none;
+    border: 0;
     cursor: pointer;
 }
 .left, .right {
     margin-bottom: 12px;
 }
-
-
