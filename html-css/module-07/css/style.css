@@ -262,9 +262,7 @@ html {
   transform: translate(-50%, 0);
 }
 .contact-form-btn {
-  focus {
-    outline: none;
-}
+  border: none;
 }
 /* .contact-form-input {
   width: 455px;
