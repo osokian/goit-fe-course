@@ -1,0 +1,96 @@
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .bg-img {
+        background-image: url(../img/tabler/bg-image-tablet.jpg);
+    }
+    .main-head {
+        padding: 38px 40px 148px 40px;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .logo {
+        order: 0;
+        padding-top: 8px;
+    }
+    .top-btn-list {
+        padding: 0;
+        display: flex;
+        margin: 0;
+    }
+    .head-btn {
+        order: 0;
+    }
+    .top {
+        width: 490px;
+        margin: 0 auto;
+    }
+    .top-title {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .top-discription {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+      .top-btn-div {
+          padding: 0 0 216px 0;
+      }
+      .top-btn {
+          width: 226px;
+      }
+      .partners-list {
+          width: 490px;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 auto;
+          justify-content: center;
+      }
+      .partners-list-item:first-child {
+          order: 1;
+      }
+      .partners-list-item:nth-child(2) {
+          order: 3;
+      }
+      .partners-list-item:nth-child(3) {
+          order: 2;
+      }
+      .partners-list-item:nth-child(4) {
+          order: 4;
+          padding-top: 30px;
+      }
+      .partner-photo {
+        padding-top: 30px;
+      }
+      .bottom-btn-div {
+          margin: 0 auto;
+          padding: 40px 0 40px 0;
+      }
+      .bottom-btn {
+          width: 226px;
+      }
+      @media (min-width: 940px) {
+          .container {
+              width: 940px;
+          }
+          .bg-img {
+              background-image: url(../img/desctop/bg-image-dectop.jpg);
+          }
+          .main-head {
+              padding: 50px 0 147px 0;
+          }
+          .top-title {
+              text-align: center;
+              font-size: 50px;
+              margin-bottom: 32px;
+          }
+          .partners-list {
+              width: 940px;
+          }
+          .partners-list-item:nth-child(4) {
+              padding: 0;
+          }
+      }
+}
