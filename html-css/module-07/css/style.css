@@ -128,8 +128,8 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 114px;
-  margin-bottom: 1px;
+  margin-top: 128px;
+  margin-bottom: 28px;
 }
 .services-discription {
   font-family: "Pt serif", italic;
@@ -138,7 +138,7 @@ html {
   line-height: 24px;
   color: #777777;
   text-align: center;
-  margin-bottom: 82px;
+  margin-bottom: 78px;
 }
 .services-list {
   display: flex;
