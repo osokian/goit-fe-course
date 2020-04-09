@@ -1,0 +1,298 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff');  /* Modern Browsers */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
+        
+  }
+/* montserrat-300 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+       url('../fonts/montserrat-v14-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Modern Browsers */
+  }
+  *,
+*::before
+*::after {
+    box-sizing: inherit;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.container {
+  min-width: 1170px;
+  min-width: 320px;
+  margin: auto;
+}
+body {
+  /* min-width: 100%; */
+  height: auto;
+  margin: 0 auto;
+}
+.navigation {
+  text-align: center;
+  background-image: url(../img/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.logo {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #ffffff;
+  height: 36px;
+  width: 90px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 18px;
+  background-color: rgba(26, 25, 21, 0);
+  /* border: 2px solid #ffffff; */
+  margin-top: 16px;
+  margin-bottom: 124px;
+  outline: none;
+}
+.btn:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.headline {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  /* margin-bottom: 18px;
+  margin-top: 34px; */
+}
+.one {
+  margin-top: 20px;
+}
+.two {
+  margin-bottom: 24px;
+}
+.finder {
+  margin-bottom: 131px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.text {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+}
+/* section2 */
+.mono {
+  text-align: center;
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-top: 68px;
+  margin-bottom: 18px;
+}
+.team-play {
+  text-align: center;
+}
+/* img {
+  margin-bottom: 14px;
+} */
+.name {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.prolog {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.breadley::before {
+  display: block;
+  content: "";
+  background-image: url(../img/partners/1.1.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.lucas::before {
+  display: block;
+  content: "";
+  background-image: url(../img/partners/1.2.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.walker::before {
+  display: block;
+  content: "";
+  background-image: url(../img/partners/1.3.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hunter::before {
+  display: block;
+  content: "";
+  background-image: url(../img/partners/1.4.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pos {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.breadley {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto; 
+}
+.lucas {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+.walker {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+.hunter {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+.finish {
+  font-size: 14px;
+  color: #ff4e50;
+  font-family: "Montserrat";
+  font-weight: 700;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 2px solid #ff4e50 ;
+  margin-bottom: 56px;
+  cursor: pointer;
+  outline: none;
+}
+.fin {
+  text-align: center;
+}
+@media (min-width:768px) {
+  .navigation {
+    background-image: url(../img/bg-image-tablet.jpg);}
+  .headline {
+    font-size: 52px;
+  }
+  .text {
+    font-size: 24px;
+  }
+  .mono {
+    margin-bottom: 40px;
+  }
+  .lo {
+    padding-top: 22px;
+  }
+}
+@media (min-width:992px) {
+  .navigation {
+    background-image: url(../img/bg-image-dectop.jpg);
+  }
+}
+
+
+
+
+/* 
+.Layer_9 {
+  background-image: url("Layer 9.png");
+  position: absolute;
+  left: 1018px;
+  top: 823px;
+  width: 126px;
+  height: 126px;
+  z-index: 30;
+} */
