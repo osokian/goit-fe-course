@@ -1,11 +1,15 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *,
 *::before
 *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     margin: 0 auto;
     padding: 0;
 }
@@ -36,23 +40,33 @@ a {
 .header {
     min-height: 1000px;
     color: #ffffff;
+    background:  -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9))), url(../images/vulture.jpg);
+    background:  -o-linear-gradient( bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(../images/vulture.jpg);
     background:  linear-gradient( 0deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(../images/vulture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@media (min-resolution: 192dpi ) {
+@media (-webkit-min-device-pixel-ratio: 2 ), (-o-min-device-pixel-ratio: 2/1 ), (min-resolution: 192dpi ) {
     .header {
+        background:  -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9))), url(../images/vulture@2x.jpg);
+        background:  -o-linear-gradient( bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(../images/vulture@2x.jpg);
         background:  linear-gradient( 0deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(../images/vulture@2x.jpg);
     }
 }
 
 .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100px;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .logo {
@@ -68,9 +82,13 @@ a {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 620px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -85,6 +103,8 @@ a {
 
 .main-nav__list :hover {
     color:  rgb(252, 227, 138);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -94,6 +114,8 @@ a {
     height: 4px;
     width: 100%;
     background-color: rgb(252, 227, 138);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
     margin: 0 auto; 
     margin-top: 10px;
@@ -108,6 +130,8 @@ a {
 
 .main-nav__list :hover .main-nav__svg {
     fill: rgb(252, 227, 138);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -115,8 +139,12 @@ a {
     font-family: 'Kaushan Script', sans-serif ;
     font-size: 72px;
     line-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 0;
     padding-top: 150px;
@@ -178,7 +206,9 @@ a {
 .section-head__title {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    tab-size: 28px;
+    -moz-tab-size: 28px;
+      -o-tab-size: 28px;
+         tab-size: 28px;
     font-size: 28px;
     line-height: 36px;
     font-weight: 800;
@@ -199,9 +229,13 @@ a {
 .amazing-services__list {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .amazing-services__item {
@@ -283,8 +317,12 @@ a {
 .team__list {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /* .tean__item {
@@ -317,19 +355,31 @@ a {
 .overlay {
     width: 380px;
     height: 471px;
+    background: -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
+    background: -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     position: absolute;
     opacity: 0;
     visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
 .overlay__list {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -337,9 +387,15 @@ a {
     width: 56px;
     height: 56px;;
     background-color: #fce38a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
     /* social- icons */
@@ -378,7 +434,8 @@ a {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
@@ -408,29 +465,40 @@ a {
 .overlay__icon:hover {
 background-color: #f38181;
 cursor: pointer;
+-webkit-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
 transition: all 0.5s linear;
 }
 
 .overlay__icon:hover .overlay__svg {
     fill: #ffffff;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 
 }
 
 .team__image {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
 .team__item:hover .team__image {
-    transform: translate( -10px, -10px);
+    -webkit-transform: translate( -10px, -10px);
+        -ms-transform: translate( -10px, -10px);
+            transform: translate( -10px, -10px);
     z-index: 1;
 }
 
 .team__item:hover .overlay {
     opacity: 0.9;
     visibility: visible;
-    box-shadow: 10px 10px 0 rgb(149, 225, 211);
-    transform: translate( -10px, -10px);
+    -webkit-box-shadow: 10px 10px 0 rgb(149, 225, 211);
+            box-shadow: 10px 10px 0 rgb(149, 225, 211);
+    -webkit-transform: translate( -10px, -10px);
+        -ms-transform: translate( -10px, -10px);
+            transform: translate( -10px, -10px);
     z-index: 2;
 }
 
@@ -448,10 +516,17 @@ transition: all 0.5s linear;
    /* footer */
 
    .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 11px;
 }
 
@@ -459,8 +534,11 @@ transition: all 0.5s linear;
     font-size: 14px;
     line-height: 17px;
     margin-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 
 
 }
@@ -483,6 +561,8 @@ transition: all 0.5s linear;
 }
 
 .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
