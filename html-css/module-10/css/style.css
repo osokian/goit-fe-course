@@ -39,7 +39,7 @@ a {
     background:  linear-gradient( 0deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(../images/vulture.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 @media (min-resolution: 192dpi ) {
@@ -113,7 +113,7 @@ a {
 
 .header__discription {
     font-family: 'Kaushan Script', sans-serif ;
-    font-size: 60px;
+    font-size: 72px;
     line-height: 30px;
     display: flex;
     justify-content: center;
@@ -127,8 +127,8 @@ a {
 .header__title {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 120px;
-    line-height: 106px;
+    font-size: 150px;
+    line-height: 0.933;
     font-weight: 700;
     margin: 0 auto; 
     text-align: center;
@@ -136,7 +136,7 @@ a {
 }
 
 .button-div {
-    padding: 125px 0 230px 0;
+    padding: 115px 0 230px 0;
 }
 
 .header__button {
@@ -144,8 +144,8 @@ a {
     margin: 0 auto;
     outline: none;
     border: 3px solid  rgb(255, 255, 255);
-    width: 164px;
-    height: 44px;
+    width: 160px;
+    height: 40px;
     background-color: rgba(255, 255, 255, 0);
     font-family: 'montserat', sans-serif;
     font-size: 14px;
@@ -162,7 +162,7 @@ a {
    /* section amazing-services */
 
 .section-head {
-    padding-top: 80px;
+    padding-top: 42px;
 }
 
 .section-head__discription {
@@ -171,16 +171,17 @@ a {
     line-height: 30px;
     margin: 0;
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     text-align: center;
 }
 
 .section-head__title {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    tab-size: 30px;
+    tab-size: 28px;
+    font-size: 28px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0 auto; 
     text-align: center;
 }
@@ -451,6 +452,7 @@ transition: all 0.5s linear;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 11px;
 }
 
    .footer__left {
