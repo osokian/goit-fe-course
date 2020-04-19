@@ -1,0 +1,205 @@
+.description-wrapper {
+    min-width: 980px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 88px;
+}
+
+.team__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* .tean__item {
+    text-align: center;
+} */
+
+.team__name {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.team__position {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;   
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.overlay {
+    width: 380px;
+    height: 471px;
+    background: -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
+    background: -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.overlay__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.overlay__icon {
+    width: 56px;
+    height: 56px;;
+    background-color: #fce38a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+    /* social- icons */
+
+.overlay__svg {
+    fill:rgb(243,129,129);
+}
+
+.overlay__svg--facebook {
+    width: 13px;
+    height: 26px;
+}
+
+.overlay__svg--twitter {
+    width: 26px;
+    height: 22px;
+}
+
+.overlay__svg--pinterest {
+    width: 21px;
+    height: 26px;
+}
+
+.overlay__svg--instagram {
+    width: 26px;
+    height: 26px;
+}
+
+/* __________________________ */
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* bg icons for li */
+
+/* .icon-twitter {
+    background-image: url(../images/meet-our-team/icon-twitter.png);
+}
+
+.icon-pinterest {
+    background-image: url(../images/meet-our-team/icon-pinterest.png);
+}
+
+.icon-instagram {
+    background-image: url(../images/meet-our-team/icon-instagram.png);
+} */
+
+/* ______________ */
+
+
+.overlay__icon:not(:last-child) {
+    margin-right: 1px;
+}
+
+.overlay__icon:hover {
+background-color: #f38181;
+cursor: pointer;
+-webkit-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
+transition: all 0.5s linear;
+}
+
+.overlay__icon:hover .overlay__svg {
+    fill: #ffffff;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+}
+
+.team__image {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.team__item:hover .team__image {
+    -webkit-transform: translate( -10px, -10px);
+        -ms-transform: translate( -10px, -10px);
+            transform: translate( -10px, -10px);
+    z-index: 1;
+}
+
+.team__item:hover .overlay {
+    opacity: 0.9;
+    visibility: visible;
+    -webkit-box-shadow: 10px 10px 0 rgb(149, 225, 211);
+            box-shadow: 10px 10px 0 rgb(149, 225, 211);
+    -webkit-transform: translate( -10px, -10px);
+        -ms-transform: translate( -10px, -10px);
+            transform: translate( -10px, -10px);
+    z-index: 2;
+}
+
+.team::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+    margin: 0 auto; 
+    margin-top: 78px;
+    margin-bottom: 10px;
+}
